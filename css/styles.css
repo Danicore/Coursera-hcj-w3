@@ -1,37 +1,25 @@
-body{
-	background: rgb(85, 26, 34);
-}
-
-.navbar, .container, #navbar-brand{
+.navbar, #navbar-brand{
 	width: 100%;
 	border-radius: 0;
-}
-
-#cont1, #navbar-brand{
-	height: 80px;
+	height: 100px;
 	background: rgb(46, 206, 14);
-}
-
-#cont2 {
-	text-align: center;
-	padding-bottom: 60px;
+	margin: 0;
 }
 
 #nav-name{
 	float:left;
+	padding-left: 10px;
 }
 
 #nav-name a:hover{
 	text-decoration: none;
 }
 
-#collapsable-nav {
-	margin-bottom: ;
-}
-
 #collapsable-nav a{
 	background: rgb(206, 68, 14);
 	color: rgb(4, 38, 56);
+	position: relative;
+	bottom: 10px;
 }
 
 #collapsable-nav a:hover{
@@ -40,21 +28,33 @@ body{
 	text-decoration: none;
 }
 
-h3{
-	margin-top: 10px;
+#sec1 {
+	text-align: center;
+	padding-bottom: 60px;
+	background: white;
+	margin: 0;
+}
+
+h3 {
 	text-align: center;
 }
 
-#main-content{
+#sec2{
 	background-color: rgb(85, 26, 34);
-	margin: 0px auto 0px;
 	color: white;
+	padding: 50px;
+	margin: 0;
+}
+
+#sec2 h3, #sec2 p {
+	position: relative;
+	top: 20px;
 }
 
 #navbar-brand button{
 	position: absolute;
-	right: 15px;
-	top: 5px;
+	right: 10px;
+	top: 10px;
 }
 
 #nav-list li:hover{
@@ -64,7 +64,7 @@ h3{
 /***** mobile view *****/
 @media (max-width: 767px){
 
-	#navbar-brand h1{
+	#navbar-brand h2{
 		font-size: 5vw;
 	}
 
